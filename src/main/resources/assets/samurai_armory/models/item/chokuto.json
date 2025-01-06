@@ -1,6 +1,5 @@
 {
   "credit": "Made with Blockbench",
-  "parent": "builtin/entity",
   "texture_size": [
     64,
     64
@@ -134,6 +133,6 @@
     }
   },
   "textures": {
-    "particle": "samurai_armory:item/chokuto"
+    "particle": "item/chokuto"
   }
 }
