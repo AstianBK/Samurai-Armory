@@ -8,9 +8,9 @@
   "display": {
     "thirdperson_righthand": {
       "rotation": [
-        -23.25,
-        0,
-        0
+        -58.88,
+        0.85,
+        -26.63
       ],
       "scale": [
         0.7,
@@ -20,9 +20,9 @@
     },
     "thirdperson_lefthand": {
       "rotation": [
-        -23.25,
-        0,
-        0
+        -58.88,
+        0.85,
+        -26.63
       ],
       "scale": [
         0.7,
@@ -74,13 +74,18 @@
         0,
         5,
         0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
       ]
     },
     "gui": {
       "rotation": [
-        90.25,
-        0,
-        0
+        84.01,
+        -34.84,
+        40.39
       ],
       "translation": [
         0,
@@ -88,9 +93,9 @@
         0
       ],
       "scale": [
-        0.7,
-        0.7,
-        0.7
+        0.6,
+        0.6,
+        0.6
       ]
     },
     "fixed": {
@@ -107,6 +112,6 @@
     }
   },
   "textures": {
-    "particle": "samurai_armory:item/tate_shield"
+    "particle": "item/tate_shield"
   }
 }
