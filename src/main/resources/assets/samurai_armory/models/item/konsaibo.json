@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
   "texture_size": [
     64,
     32
@@ -92,19 +93,19 @@
     },
     "gui": {
       "rotation": [
-        -90.95,
-        48,
-        115.8
+        -90.92,
+        46.25,
+        115.76
       ],
       "translation": [
         0,
-        -0.5,
+        -0.75,
         0
       ],
       "scale": [
         0.38,
-        0.38,
-        0.42296875
+        0.319453125,
+        0.440546875
       ]
     },
     "head": {
@@ -138,6 +139,6 @@
     }
   },
   "textures": {
-    "particle": "samurai_armory:item/konsaibo"
+    "particle": "konsaibo:item/konsaibo"
   }
 }
