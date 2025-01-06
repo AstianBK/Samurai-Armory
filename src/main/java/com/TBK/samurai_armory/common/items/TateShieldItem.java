@@ -1,8 +1,10 @@
 package com.TBK.samurai_armory.common.items;
 
+import com.TBK.samurai_armory.Config;
 import com.TBK.samurai_armory.client.renderer.KatanaRenderer;
 import com.TBK.samurai_armory.client.renderer.TateShieldRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShieldItem;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import software.bernie.geckolib.animatable.GeoItem;
@@ -30,6 +32,12 @@ public class TateShieldItem extends ShieldItem implements GeoItem {
             }
         });
     }
+
+    @Override
+    public int getMaxDamage(ItemStack stack) {
+        return Config.tateShieldDurability;
+    }
+
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
 

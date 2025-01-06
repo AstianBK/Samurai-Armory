@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class SACreativeTabs {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SamuraiArmory.MODID);
 
-    public static final RegistryObject<CreativeModeTab> BK_MOBS_TAB = TABS.register(SamuraiArmory.MODID,()-> CreativeModeTab.builder()
+    public static final RegistryObject<CreativeModeTab> SA_MOBS_TAB = TABS.register(SamuraiArmory.MODID,()-> CreativeModeTab.builder()
             .icon(()->new ItemStack(SAItems.CHOKUTO.get()))
             .title(Component.translatable("itemGroup.samurai_armory"))
             .displayItems((s,a)-> {
@@ -20,6 +20,24 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.TATE_SHIELD.get()));
                 a.accept(new ItemStack(SAItems.KATAKAMA.get()));
                 a.accept(new ItemStack(SAItems.KONSAIBO.get()));
+
+                a.accept(new ItemStack(SAItems.ASHIGARU_HELMET.get()));
+                a.accept(new ItemStack(SAItems.ASHIGARU_CHEST.get()));
+                a.accept(new ItemStack(SAItems.ASHIGARU_LEGGINGS.get()));
+                a.accept(new ItemStack(SAItems.ASHIGARU_BOOT.get()));
+
+
+                a.accept(new ItemStack(SAItems.KUSARI_HELMET.get()));
+                a.accept(new ItemStack(SAItems.KUSARI_CHEST.get()));
+                a.accept(new ItemStack(SAItems.KUSARI_LEGGINGS.get()));
+                a.accept(new ItemStack(SAItems.KUSARI_BOOT.get()));
+
+
+                a.accept(new ItemStack(SAItems.GOSUKU_HELMET.get()));
+                a.accept(new ItemStack(SAItems.GOSUKU_CHEST.get()));
+                a.accept(new ItemStack(SAItems.GOSUKU_LEGGINGS.get()));
+                a.accept(new ItemStack(SAItems.GOSUKU_BOOT.get()));
+
             })
             .build());
 }

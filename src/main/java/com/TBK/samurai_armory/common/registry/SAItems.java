@@ -2,6 +2,7 @@ package com.TBK.samurai_armory.common.registry;
 
 import com.TBK.samurai_armory.SamuraiArmory;
 import com.TBK.samurai_armory.common.items.*;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,4 +24,48 @@ public class SAItems {
 
     public static final RegistryObject<Item> TATE_SHIELD = ITEMS.register("tate_shield",()->new TateShieldItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
 
+
+    public static final RegistryObject<Item> ASHIGARU_HELMET = ITEMS.register("ashigaru_helmet",
+            ()-> new AshigaruArmorItem(ArmorItem.Type.HELMET,
+                    props()));
+    public static final RegistryObject<Item> ASHIGARU_CHEST = ITEMS.register("ashigaru_chest",
+            ()-> new AshigaruArmorItem(ArmorItem.Type.CHESTPLATE,
+                    props()));
+    public static final RegistryObject<Item> ASHIGARU_LEGGINGS= ITEMS.register("ashigaru_leggings",
+            ()-> new AshigaruArmorItem(ArmorItem.Type.LEGGINGS,
+                    props()));
+    public static final RegistryObject<Item> ASHIGARU_BOOT = ITEMS.register("ashigaru_boot",
+            ()-> new AshigaruArmorItem(ArmorItem.Type.BOOTS,
+                    props()));
+
+    public static final RegistryObject<Item> KUSARI_HELMET = ITEMS.register("kusari_helmet",
+            ()-> new KusariArmorItem(ArmorItem.Type.HELMET,
+                    props()));
+    public static final RegistryObject<Item> KUSARI_CHEST = ITEMS.register("kusari_chest",
+            ()-> new KusariArmorItem(ArmorItem.Type.CHESTPLATE,
+                    props()));
+    public static final RegistryObject<Item> KUSARI_LEGGINGS= ITEMS.register("kusari_leggings",
+            ()-> new KusariArmorItem(ArmorItem.Type.LEGGINGS,
+                    props()));
+    public static final RegistryObject<Item> KUSARI_BOOT = ITEMS.register("kusari_boot",
+            ()-> new KusariArmorItem(ArmorItem.Type.BOOTS,
+                    props()));
+
+
+    public static final RegistryObject<Item> GOSUKU_HELMET = ITEMS.register("gosuku_helmet",
+            ()-> new GosukuArmorItem(ArmorItem.Type.HELMET,
+                    props()));
+    public static final RegistryObject<Item> GOSUKU_CHEST = ITEMS.register("gosuku_chest",
+            ()-> new GosukuArmorItem(ArmorItem.Type.CHESTPLATE,
+                    props()));
+    public static final RegistryObject<Item> GOSUKU_LEGGINGS= ITEMS.register("gosuku_leggings",
+            ()-> new GosukuArmorItem(ArmorItem.Type.LEGGINGS,
+                    props()));
+    public static final RegistryObject<Item> GOSUKU_BOOT = ITEMS.register("gosuku_boot",
+            ()-> new GosukuArmorItem(ArmorItem.Type.BOOTS,
+                    props()));
+
+    public static Item.Properties props(){
+        return new Item.Properties();
+    }
 }
