@@ -383,7 +383,7 @@
 							"rotation": [0, 0, 0],
 							"uv": {
 								"north": {"uv": [21, 17], "uv_size": [1, 3]},
-								"east": {"uv": [21, 20], "uv_size": [1, 3]},
+								"east": {"uv": [25, 9], "uv_size": [1, 3]},
 								"south": {"uv": [23, 9], "uv_size": [1, 3]},
 								"west": {"uv": [24, 9], "uv_size": [1, 3]},
 								"up": {"uv": [22, 14], "uv_size": [1, 1]},
