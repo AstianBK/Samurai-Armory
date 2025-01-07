@@ -139,6 +139,6 @@
     }
   },
   "textures": {
-    "particle": "konsaibo:item/konsaibo"
+    "particle": "samurai_armory:item/konsaibo"
   }
 }

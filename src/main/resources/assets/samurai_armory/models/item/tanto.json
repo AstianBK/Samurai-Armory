@@ -122,6 +122,6 @@
     }
   },
   "textures": {
-    "particle": "item/tanto"
+    "particle": "samurai_armory:item/tanto"
   }
 }

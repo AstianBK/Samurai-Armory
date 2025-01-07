@@ -112,6 +112,6 @@
     }
   },
   "textures": {
-    "particle": "item/tate_shield"
+    "particle": "samurai_armory:item/tate_shield"
   }
 }
