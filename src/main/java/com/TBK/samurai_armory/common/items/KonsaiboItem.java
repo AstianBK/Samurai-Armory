@@ -4,6 +4,7 @@ import com.TBK.samurai_armory.Config;
 import com.TBK.samurai_armory.client.renderer.BlackKatanaRenderer;
 import com.TBK.samurai_armory.client.renderer.KonsaiboRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import java.util.function.Consumer;
@@ -26,6 +27,11 @@ public class KonsaiboItem extends CluItem{
     }
     @Override
     public double getAttackDamage() {
-        return Config.blackKatanaDamage;
+        return Config.konsaiboDamage;
+    }
+
+    @Override
+    public int getMaxDamage(ItemStack stack) {
+        return Config.konsaiboDurability;
     }
 }

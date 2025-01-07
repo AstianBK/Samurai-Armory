@@ -27,6 +27,39 @@ public class Config
             .defineInRange("tachi_damage", 4.0D, 0, Double.MAX_VALUE);
 
 
+    private static final ForgeConfigSpec.DoubleValue CHOKUTO_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("chokuto_damage", 6.0D, 1, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue CHOKUTO_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("chokuto_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue TANTO_DAMAGE = BUILDER
+            .comment("Black Katana damage value")
+            .defineInRange("tanto_damage", 6.0D, 1, Double.MAX_VALUE);
+    private static final ForgeConfigSpec.IntValue TANTO_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("tanto_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue KATAKAMA_DAMAGE = BUILDER
+            .comment("Gilded Katana damage value")
+            .defineInRange("katakama_damage", 6.0D, 1, Double.MAX_VALUE);
+    private static final ForgeConfigSpec.IntValue KATAKAMA_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("katakama_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue KONSAIBO_DAMAGE = BUILDER
+            .comment("Gilded Katana damage value")
+            .defineInRange("konsaibo_damage", 6.0D, 0, Double.MAX_VALUE);
+    private static final ForgeConfigSpec.IntValue KONSAIBO_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("konsaibo_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue TATE_SHIELD_DURABILITY = BUILDER
+            .comment("Tachi damage value")
+            .defineInRange("tate_shield_durability", 300, 1, Integer.MAX_VALUE);
+
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
     public static double katanaDamage;
@@ -35,6 +68,17 @@ public class Config
 
     public static double tachiDamage;
 
+    public static double chokutoDamage;
+    public static int chokutoDurability;
+    public static double tantoDamage;
+    public static int tantoDurability;
+    public static double katakamaDamage;
+    public static int katakamaDurability;
+    public static double konsaiboDamage;
+    public static int konsaiboDurability;
+
+    public static int tateShieldDurability;
+
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
@@ -42,6 +86,21 @@ public class Config
         blackKatanaDamage= BLACK_KATANA_DAMAGE.get();
         gildedKatanaDamage= GILDED_KATANA_DAMAGE.get();
         tachiDamage= TACHI_DAMAGE.get();
+
+        chokutoDamage=CHOKUTO_DAMAGE.get();
+        chokutoDurability=CHOKUTO_DURABILITY.get();
+
+        tantoDamage=TANTO_DAMAGE.get();
+        tantoDurability=TANTO_DURABILITY.get();
+
+        katakamaDamage=KATAKAMA_DAMAGE.get();
+        katakamaDurability=KATAKAMA_DURABILITY.get();
+
+        konsaiboDamage=KONSAIBO_DAMAGE.get();
+        konsaiboDurability=KONSAIBO_DURABILITY.get();
+
+        tateShieldDurability=TATE_SHIELD_DURABILITY.get();
+
         SAItemProperties.register();
     }
 }
