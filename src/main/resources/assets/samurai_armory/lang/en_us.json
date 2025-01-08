@@ -1,3 +1,23 @@
 {
-  "xd":"lol"
+  "item.samurai_armory.chokuto":"Chokuto",
+  "item.samurai_armory.katakama_yari":"Katakama Yari",
+  "item.samurai_armory.konsaibo":"Konsaibo",
+  "item.samurai_armory.tate_shield":"Tate Shield",
+  "item.samurai_armory.tanto":"Tanto",
+
+  "item.samurai_armory.ashigaru_helmet":"Ashigaru Helmet",
+  "item.samurai_armory.ashigaru_chest":"Ashigaru Chestplate",
+  "item.samurai_armory.ashigaru_leggings":"Ashigaru Leggings",
+  "item.samurai_armory.ashigaru_boot":"Ashigaru Boots",
+
+  "item.samurai_armory.kusari_helmet":"Kusari Helmet",
+  "item.samurai_armory.kusari_chest":"Kusari Chestplate",
+  "item.samurai_armory.kusari_leggings":"Kusari Leggings",
+  "item.samurai_armory.kusari_boot":"Kusari Boots",
+
+  "item.samurai_armory.gosuku_helmet":"Gosuku Helmet",
+  "item.samurai_armory.gosuku_chest":"Gosuku Chestplate",
+  "item.samurai_armory.gosuku_leggings":"Gosuku Leggings",
+  "item.samurai_armory.gosuku_boot":"Gosuku Boots"
+
 }

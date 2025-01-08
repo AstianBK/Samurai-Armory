@@ -23,8 +23,8 @@ public class CluItem extends SwordItem implements GeoItem {
     private final float attackSpeed;
     private final AnimatableInstanceCache cache= GeckoLibUtil.createInstanceCache(this);
     public CluItem(Properties p_43272_) {
-        super(Tiers.IRON, 3, 1.0F, p_43272_);
-        this.attackSpeed =1.0F;
+        super(Tiers.WOOD, 0, 0.0F, p_43272_);
+        this.attackSpeed =-3.2F;
     }
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
@@ -52,9 +52,14 @@ public class CluItem extends SwordItem implements GeoItem {
     }
 
 
+    @Override
+    public float getDamage() {
+        return (float) this.getAttackDamage();
+    }
+
     public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot p_43383_) {
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-        builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", this.getAttackDamage(), AttributeModifier.Operation.ADDITION));
+        builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", this.getAttackDamage()-1, AttributeModifier.Operation.ADDITION));
         builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", (double)this.attackSpeed, AttributeModifier.Operation.ADDITION));
         return p_43383_ == EquipmentSlot.MAINHAND ? builder.build() : super.getDefaultAttributeModifiers(p_43383_);
     }
