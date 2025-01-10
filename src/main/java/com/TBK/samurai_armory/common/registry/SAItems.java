@@ -18,9 +18,16 @@ public class SAItems {
     public static final RegistryObject<Item> TANTO = ITEMS.register("tanto",()->new TantoItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
 
     public static final RegistryObject<Item> CHOKUTO = ITEMS.register("chokuto",()->new ChokutoItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
+    public static final RegistryObject<Item> NAGINATA = ITEMS.register("naginata",()->new NaginataItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
+
     public static final RegistryObject<Item> KATAKAMA = ITEMS.register("katakama_yari",()->new KatakamaYariItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
 
+    public static final RegistryObject<Item> FUKURO = ITEMS.register("fukuro_yari",()->new FukuroYariItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
+
+    public static final RegistryObject<Item> JUMONJI = ITEMS.register("jumonji_yari",()->new JumonjiYariItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
+
     public static final RegistryObject<Item> KONSAIBO = ITEMS.register("konsaibo",()->new KonsaiboItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
+    public static final RegistryObject<Item> TETSUBO = ITEMS.register("tetsubo",()->new TetsuboItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
 
     public static final RegistryObject<Item> TATE_SHIELD = ITEMS.register("tate_shield",()->new TateShieldItem(new Item.Properties().stacksTo(1).defaultDurability(100)));
 

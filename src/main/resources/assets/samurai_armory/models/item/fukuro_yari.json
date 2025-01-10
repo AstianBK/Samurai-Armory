@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
   "texture_size": [
     64,
     64
@@ -116,6 +117,6 @@
     }
   },
   "textures": {
-    "particle": "item/fukuro_yari"
+    "particle": "samurai_armory:item/fukuro_yari"
   }
 }

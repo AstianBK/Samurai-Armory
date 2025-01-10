@@ -127,6 +127,6 @@
     }
   },
   "textures": {
-    "particle": "item/naginata"
+    "particle": "samurai_armory:item/naginata"
   }
 }

@@ -20,6 +20,11 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.TATE_SHIELD.get()));
                 a.accept(new ItemStack(SAItems.KATAKAMA.get()));
                 a.accept(new ItemStack(SAItems.KONSAIBO.get()));
+                a.accept(new ItemStack(SAItems.JUMONJI.get()));
+                a.accept(new ItemStack(SAItems.FUKURO.get()));
+                a.accept(new ItemStack(SAItems.TETSUBO.get()));
+                a.accept(new ItemStack(SAItems.NAGINATA.get()));
+
 
                 a.accept(new ItemStack(SAItems.ASHIGARU_HELMET.get()));
                 a.accept(new ItemStack(SAItems.ASHIGARU_CHEST.get()));
