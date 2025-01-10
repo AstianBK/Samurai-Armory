@@ -26,7 +26,6 @@ public class Config
             .comment("Tachi damage value")
             .defineInRange("tachi_damage", 4.0D, 0, Double.MAX_VALUE);
 
-
     private static final ForgeConfigSpec.DoubleValue CHOKUTO_DAMAGE = BUILDER
             .comment("Katana damage value")
             .defineInRange("chokuto_damage", 6.0D, 1, Double.MAX_VALUE);
@@ -34,6 +33,39 @@ public class Config
     private static final ForgeConfigSpec.IntValue CHOKUTO_DURABILITY = BUILDER
             .comment("Katana damage value")
             .defineInRange("chokuto_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue TETSUBO_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("tetsubo_damage", 6.0D, 1, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue TETSUBO_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("tetsubo_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue JUMONJI_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("jumonji_damage", 6.0D, 1, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue JUMONJI_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("jumonji_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue FUKURO_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("fukuro_damage", 6.0D, 1, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue FUKURO_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("fukuro_durability", 100, 1, Integer.MAX_VALUE);
+
+
+    private static final ForgeConfigSpec.DoubleValue NAGINATA_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("naginata_damage", 6.0D, 1, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue NAGINATA_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("naginata_durability", 100, 1, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.DoubleValue TANTO_DAMAGE = BUILDER
             .comment("Black Katana damage value")
@@ -68,6 +100,16 @@ public class Config
 
     public static double tachiDamage;
 
+    public static double tetsuboDamage;
+    public static int tetsuboDurability;
+    public static double fukuroDamage;
+    public static int fukuroDurability;
+    public static double jumonjiDamage;
+    public static int jumonjiDurability;
+    public static double naginataDamage;
+    public static int naginataDurability;
+
+
     public static double chokutoDamage;
     public static int chokutoDurability;
     public static double tantoDamage;
@@ -86,6 +128,19 @@ public class Config
         blackKatanaDamage= BLACK_KATANA_DAMAGE.get();
         gildedKatanaDamage= GILDED_KATANA_DAMAGE.get();
         tachiDamage= TACHI_DAMAGE.get();
+
+        tetsuboDamage=TETSUBO_DAMAGE.get();
+        tetsuboDurability=TETSUBO_DURABILITY.get();
+
+        fukuroDamage=FUKURO_DAMAGE.get();
+        fukuroDurability=FUKURO_DURABILITY.get();
+
+        jumonjiDamage=JUMONJI_DAMAGE.get();
+        jumonjiDurability=JUMONJI_DURABILITY.get();
+
+        naginataDamage=NAGINATA_DAMAGE.get();
+        naginataDurability=NAGINATA_DURABILITY.get();
+
 
         chokutoDamage=CHOKUTO_DAMAGE.get();
         chokutoDurability=CHOKUTO_DURABILITY.get();

@@ -1,5 +1,7 @@
 {
   "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+
   "texture_size": [
     64,
     64
@@ -116,6 +118,6 @@
     }
   },
   "textures": {
-    "particle": "item/jumonji_yari"
+    "particle": "samurai_armory:item/jumonji_yari"
   }
 }
