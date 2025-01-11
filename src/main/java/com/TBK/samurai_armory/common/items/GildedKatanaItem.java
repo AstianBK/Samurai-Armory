@@ -1,6 +1,7 @@
 package com.TBK.samurai_armory.common.items;
 
 import com.TBK.samurai_armory.Config;
+import com.TBK.samurai_armory.client.renderer.GildedKatanaRenderer;
 import com.TBK.samurai_armory.client.renderer.KatanaRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
@@ -15,7 +16,7 @@ public class GildedKatanaItem extends KatanaItem{
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private final BlockEntityWithoutLevelRenderer renderer = new KatanaRenderer<>();
+            private final BlockEntityWithoutLevelRenderer renderer = new GildedKatanaRenderer<>();
 
             @Override
             public BlockEntityWithoutLevelRenderer getCustomRenderer() {

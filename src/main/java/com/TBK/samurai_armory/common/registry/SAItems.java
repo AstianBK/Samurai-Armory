@@ -13,6 +13,9 @@ public class SAItems {
 
     public static final RegistryObject<Item> KATANA= ITEMS.register("katana",()->new KatanaItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BLACK_KATANA= ITEMS.register("black_katana",()->new BlackKatanaItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> WAKIZASHI= ITEMS.register("wakizashi",()->new WakizashiItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> NODACHI= ITEMS.register("nodachi",()->new NodachiItem(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> GILDED_KATANA= ITEMS.register("gilded_katana",()->new GildedKatanaItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TACHI= ITEMS.register("tachi",()->new TachiItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TANTO = ITEMS.register("tanto",()->new TantoItem(new Item.Properties().stacksTo(1).defaultDurability(100)));

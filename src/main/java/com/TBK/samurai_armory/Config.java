@@ -14,9 +14,38 @@ public class Config
             .comment("Katana damage value")
             .defineInRange("katana_damage", 10.0D, 0, Double.MAX_VALUE);
 
+    private static final ForgeConfigSpec.IntValue KATANA_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("katana_durability", 100, 1, Integer.MAX_VALUE);
+
+
     private static final ForgeConfigSpec.DoubleValue BLACK_KATANA_DAMAGE = BUILDER
             .comment("Black Katana damage value")
             .defineInRange("black_katana_damage", 4.0D, 0, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue BLACK_KATANA_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("black_katana_durability", 100, 1, Integer.MAX_VALUE);
+
+
+    private static final ForgeConfigSpec.DoubleValue NODACHI_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("nodachi_damage", 10.0D, 0, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue NODACHI_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("nodachi_durability", 100, 1, Integer.MAX_VALUE);
+
+
+    private static final ForgeConfigSpec.DoubleValue WAKIZASHI_DAMAGE = BUILDER
+            .comment("Black Katana damage value")
+            .defineInRange("wakizashi_damage", 4.0D, 0, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue WAKIASHI_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("wakizashi_durability", 100, 1, Integer.MAX_VALUE);
+
+
 
     private static final ForgeConfigSpec.DoubleValue GILDED_KATANA_DAMAGE = BUILDER
             .comment("Gilded Katana damage value")
@@ -95,9 +124,16 @@ public class Config
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
     public static double katanaDamage;
+    public static int katanaDurability;
     public static double blackKatanaDamage;
-    public static double gildedKatanaDamage;
+    public static int blackKatanaDurability;
+    public static double nodachiDamage;
+    public static int nodachiDurability;
+    public static double wakizashiDamage;
+    public static int wakizashiDurability;
 
+
+    public static double gildedKatanaDamage;
     public static double tachiDamage;
 
     public static double tetsuboDamage;
