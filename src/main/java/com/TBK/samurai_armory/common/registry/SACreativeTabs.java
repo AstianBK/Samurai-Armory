@@ -17,6 +17,11 @@ public class SACreativeTabs {
             .displayItems((s,a)-> {
                 a.accept(new ItemStack(SAItems.CHOKUTO.get()));
                 a.accept(new ItemStack(SAItems.TANTO.get()));
+                a.accept(new ItemStack(SAItems.KATANA.get()));
+                a.accept(new ItemStack(SAItems.BLACK_KATANA.get()));
+                a.accept(new ItemStack(SAItems.NODACHI.get()));
+                a.accept(new ItemStack(SAItems.WAKIZASHI.get()));
+
                 a.accept(new ItemStack(SAItems.TATE_SHIELD.get()));
                 a.accept(new ItemStack(SAItems.KATAKAMA.get()));
                 a.accept(new ItemStack(SAItems.KONSAIBO.get()));

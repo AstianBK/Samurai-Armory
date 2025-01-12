@@ -8,7 +8,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class BlackKatanaModel<T extends BlackKatanaItem> extends GeoModel<T> {
     @Override
     public ResourceLocation getModelResource(T animatable) {
-        return new ResourceLocation(SamuraiArmory.MODID,"geo/black_katana.geo.json");
+        return new ResourceLocation(SamuraiArmory.MODID,"geo/katana.geo.json");
     }
 
     @Override
