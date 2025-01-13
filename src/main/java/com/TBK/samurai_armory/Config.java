@@ -18,6 +18,22 @@ public class Config
             .comment("Katana damage value")
             .defineInRange("katana_durability", 100, 1, Integer.MAX_VALUE);
 
+    private static final ForgeConfigSpec.DoubleValue KAMA_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("kama_damage", 10.0D, 0, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue KAMA_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("kama_durability", 100, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.DoubleValue NAGAMAKI_DAMAGE = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("nagamaki_damage", 10.0D, 0, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue NAGAMAKI_DURABILITY = BUILDER
+            .comment("Katana damage value")
+            .defineInRange("nagamaki_durability", 100, 1, Integer.MAX_VALUE);
+
 
     private static final ForgeConfigSpec.DoubleValue BLACK_KATANA_DAMAGE = BUILDER
             .comment("Black Katana damage value")
@@ -51,9 +67,18 @@ public class Config
             .comment("Gilded Katana damage value")
             .defineInRange("gilded_katana_damage", 8.0D, 0, Double.MAX_VALUE);
 
+    private static final ForgeConfigSpec.IntValue GILDED_KATANA_DURABILITY = BUILDER
+            .comment("Gilded Katana damage value")
+            .defineInRange("gilded_katana_durability", 8, 0, Integer.MAX_VALUE);
+
     private static final ForgeConfigSpec.DoubleValue TACHI_DAMAGE = BUILDER
             .comment("Tachi damage value")
             .defineInRange("tachi_damage", 4.0D, 0, Double.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue TACHI_DURABILITY = BUILDER
+            .comment("Gilded Katana damage value")
+            .defineInRange("tachi_durability", 8, 0, Integer.MAX_VALUE);
+
 
     private static final ForgeConfigSpec.DoubleValue CHOKUTO_DAMAGE = BUILDER
             .comment("Katana damage value")
@@ -127,6 +152,11 @@ public class Config
     public static int katanaDurability;
     public static double blackKatanaDamage;
     public static int blackKatanaDurability;
+    public static double kamaDamage;
+    public static int kamaDurability;
+    public static double nagamakiDamage;
+    public static int nagamakiDurability;
+
     public static double nodachiDamage;
     public static int nodachiDurability;
     public static double wakizashiDamage;
@@ -134,7 +164,9 @@ public class Config
 
 
     public static double gildedKatanaDamage;
+    public static int gildedKatanaDurability;
     public static double tachiDamage;
+    public static int tachiDurability;
 
     public static double tetsuboDamage;
     public static int tetsuboDurability;
@@ -161,9 +193,28 @@ public class Config
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
         katanaDamage= KATANA_DAMAGE.get();
+        katanaDurability = KATANA_DURABILITY.get();
+
         blackKatanaDamage= BLACK_KATANA_DAMAGE.get();
+        blackKatanaDurability = BLACK_KATANA_DURABILITY.get();
+
+        kamaDamage = KAMA_DAMAGE.get();
+        kamaDurability = KAMA_DURABILITY.get();
+
+        nagamakiDamage = NAGAMAKI_DAMAGE.get();
+        nagamakiDurability = NAGAMAKI_DURABILITY.get();
+
         gildedKatanaDamage= GILDED_KATANA_DAMAGE.get();
+        gildedKatanaDurability = GILDED_KATANA_DURABILITY.get();
+
         tachiDamage= TACHI_DAMAGE.get();
+        tachiDurability = TACHI_DURABILITY.get();
+
+        nodachiDamage = NODACHI_DAMAGE.get();
+        nodachiDurability = NODACHI_DURABILITY.get();
+
+        wakizashiDamage = WAKIZASHI_DAMAGE.get();
+        wakizashiDurability = WAKIASHI_DURABILITY.get();
 
         tetsuboDamage=TETSUBO_DAMAGE.get();
         tetsuboDurability=TETSUBO_DURABILITY.get();

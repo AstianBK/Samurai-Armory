@@ -1,6 +1,7 @@
 package com.TBK.samurai_armory.common.items;
 
 import com.TBK.samurai_armory.Config;
+import com.TBK.samurai_armory.client.renderer.KamaRenderer;
 import com.TBK.samurai_armory.client.renderer.KatanaRenderer;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
@@ -20,17 +21,17 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.function.Consumer;
 
-public class KatanaItem extends SwordItem implements GeoItem {
+public class KamaItem extends SwordItem implements GeoItem {
     private final float attackSpeed;
     private final AnimatableInstanceCache cache= GeckoLibUtil.createInstanceCache(this);
-    public KatanaItem(Properties p_43272_) {
+    public KamaItem(Properties p_43272_) {
         super(Tiers.WOOD, 0, 0.0F, p_43272_);
         this.attackSpeed = -2.8F;
     }
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private final BlockEntityWithoutLevelRenderer renderer = new KatanaRenderer<>();
+            private final BlockEntityWithoutLevelRenderer renderer = new KamaRenderer<>();
 
             @Override
             public BlockEntityWithoutLevelRenderer getCustomRenderer() {
@@ -48,11 +49,6 @@ public class KatanaItem extends SwordItem implements GeoItem {
         return this.cache;
     }
 
-    @Override
-    public int getMaxDamage(ItemStack stack) {
-        return Config.katanaDurability;
-    }
-
     public double getAttackDamage(){
         return Config.katanaDamage;
     }
@@ -60,6 +56,11 @@ public class KatanaItem extends SwordItem implements GeoItem {
     @Override
     public float getDamage() {
         return (float) this.getAttackDamage();
+    }
+
+    @Override
+    public int getMaxDamage(ItemStack stack) {
+        return Config.kamaDurability;
     }
 
     public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot p_43383_) {

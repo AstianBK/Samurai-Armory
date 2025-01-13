@@ -4,6 +4,7 @@ import com.TBK.samurai_armory.Config;
 import com.TBK.samurai_armory.client.renderer.GildedKatanaRenderer;
 import com.TBK.samurai_armory.client.renderer.KatanaRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import java.util.function.Consumer;
@@ -27,5 +28,10 @@ public class GildedKatanaItem extends KatanaItem{
     @Override
     public double getAttackDamage() {
         return Config.gildedKatanaDamage;
+    }
+
+    @Override
+    public int getMaxDamage(ItemStack stack) {
+        return Config.gildedKatanaDurability;
     }
 }

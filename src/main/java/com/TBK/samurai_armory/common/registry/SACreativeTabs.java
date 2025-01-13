@@ -19,7 +19,10 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.TANTO.get()));
                 a.accept(new ItemStack(SAItems.KATANA.get()));
                 a.accept(new ItemStack(SAItems.BLACK_KATANA.get()));
+                a.accept(new ItemStack(SAItems.GILDED_KATANA.get()));
+                a.accept(new ItemStack(SAItems.TACHI.get()));
                 a.accept(new ItemStack(SAItems.NODACHI.get()));
+                a.accept(new ItemStack(SAItems.NAGAMAKI.get()));
                 a.accept(new ItemStack(SAItems.WAKIZASHI.get()));
 
                 a.accept(new ItemStack(SAItems.TATE_SHIELD.get()));
@@ -27,6 +30,7 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.KONSAIBO.get()));
                 a.accept(new ItemStack(SAItems.JUMONJI.get()));
                 a.accept(new ItemStack(SAItems.FUKURO.get()));
+                a.accept(new ItemStack(SAItems.KAMA.get()));
                 a.accept(new ItemStack(SAItems.TETSUBO.get()));
                 a.accept(new ItemStack(SAItems.NAGINATA.get()));
 
