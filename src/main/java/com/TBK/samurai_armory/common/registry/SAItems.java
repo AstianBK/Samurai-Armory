@@ -3,6 +3,7 @@ package com.TBK.samurai_armory.common.registry;
 import com.TBK.samurai_armory.SamuraiArmory;
 import com.TBK.samurai_armory.common.items.*;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -77,6 +78,26 @@ public class SAItems {
             ()-> new GosukuArmorItem(ArmorItem.Type.BOOTS,
                     props()));
 
+    public static final RegistryObject<Item> NINJA_HELMET = ITEMS.register("ninja_helmet",
+            ()-> new NinjaArmorItem(ArmorItem.Type.HELMET,
+                    props()));
+    public static final RegistryObject<Item> NINJA_CHEST = ITEMS.register("ninja_chest",
+            ()-> new NinjaArmorItem(ArmorItem.Type.CHESTPLATE,
+                    props()));
+    public static final RegistryObject<Item> NINJA_LEGGINGS= ITEMS.register("ninja_leggings",
+            ()-> new NinjaArmorItem(ArmorItem.Type.LEGGINGS,
+                    props()));
+    public static final RegistryObject<Item> NINJA_BOOT = ITEMS.register("ninja_boot",
+            ()-> new NinjaArmorItem(ArmorItem.Type.BOOTS,
+                    props()));
+
+    public static final RegistryObject<Item> JINGASA_METAL_HELMET = ITEMS.register("jingasa_metal_helmet",
+            ()-> new JingasaArmorItem(ArmorMaterials.IRON,ArmorItem.Type.HELMET,
+                    props()));
+
+    public static final RegistryObject<Item> JINGASA_HAY_HELMET = ITEMS.register("jingasa_hay_helmet",
+            ()-> new JingasaArmorItem(ArmorMaterials.LEATHER,ArmorItem.Type.HELMET,
+                    props()));
     public static Item.Properties props(){
         return new Item.Properties();
     }
