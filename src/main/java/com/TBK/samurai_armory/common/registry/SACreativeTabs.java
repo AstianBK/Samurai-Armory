@@ -52,6 +52,15 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.GOSUKU_LEGGINGS.get()));
                 a.accept(new ItemStack(SAItems.GOSUKU_BOOT.get()));
 
+                a.accept(new ItemStack(SAItems.NINJA_HELMET.get()));
+                a.accept(new ItemStack(SAItems.NINJA_CHEST.get()));
+                a.accept(new ItemStack(SAItems.NINJA_LEGGINGS.get()));
+                a.accept(new ItemStack(SAItems.NINJA_BOOT.get()));
+
+                a.accept(new ItemStack(SAItems.JINGASA_HAY_HELMET.get()));
+
+                a.accept(new ItemStack(SAItems.JINGASA_METAL_HELMET.get()));
+
             })
             .build());
 }
