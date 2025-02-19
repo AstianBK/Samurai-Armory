@@ -1,0 +1,27 @@
+{
+  "type": "samurai_armory:jap_furnace_recipe",
+  "ingredient1": {
+    "item": "minecraft:iron_ingot"
+  },
+  "ingredient2": {
+    "item": "minecraft:iron_ingot"
+  },
+  "ingredient3": {
+    "item": "minecraft:gold_ingot"
+  },
+  "tool1": {
+    "tag": "samurai_armory:blacksmith_hammer"
+  },
+  "tool2": {
+    "tag": "samurai_armory:blacksmith_tongs"
+  },
+  "tool3": {
+    "tag": "samurai_armory:blacksmith_bellows"
+  },
+  "experience": 10,
+  "cooking_time":800,
+
+  "result": {
+    "item": "samurai_armory:black_katana"
+  }
+}
