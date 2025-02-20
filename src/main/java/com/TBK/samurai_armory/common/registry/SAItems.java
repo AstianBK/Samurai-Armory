@@ -12,6 +12,11 @@ import net.minecraftforge.registries.RegistryObject;
 public class SAItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SamuraiArmory.MODID);
 
+    public static final RegistryObject<Item> SMITHING_HAMMER = ITEMS.register("smithing_hammer",()->new HammerItem(new Item.Properties().stacksTo(1).durability(64)));
+    public static final RegistryObject<Item> SMITHING_CHOPSTICKS = ITEMS.register("smithing_chopsticks",()->new Item(new Item.Properties().stacksTo(1).durability(32)));
+    public static final RegistryObject<Item> SMITHING_CLAYTUBE = ITEMS.register("smithing_claytube",()->new Item(new Item.Properties().stacksTo(1).defaultDurability(128)));
+
+
     public static final RegistryObject<Item> KATANA= ITEMS.register("katana",()->new KatanaItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BLACK_KATANA= ITEMS.register("black_katana",()->new BlackKatanaItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> WAKIZASHI= ITEMS.register("wakizashi",()->new WakizashiItem(new Item.Properties().stacksTo(1)));
@@ -98,6 +103,7 @@ public class SAItems {
     public static final RegistryObject<Item> JINGASA_HAY_HELMET = ITEMS.register("jingasa_hay_helmet",
             ()-> new JingasaArmorItem(ArmorMaterials.LEATHER,ArmorItem.Type.HELMET,
                     props()));
+
     public static Item.Properties props(){
         return new Item.Properties();
     }

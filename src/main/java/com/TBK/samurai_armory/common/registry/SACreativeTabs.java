@@ -35,6 +35,7 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.NAGINATA.get()));
 
 
+
                 a.accept(new ItemStack(SAItems.ASHIGARU_HELMET.get()));
                 a.accept(new ItemStack(SAItems.ASHIGARU_CHEST.get()));
                 a.accept(new ItemStack(SAItems.ASHIGARU_LEGGINGS.get()));
@@ -60,6 +61,11 @@ public class SACreativeTabs {
                 a.accept(new ItemStack(SAItems.JINGASA_HAY_HELMET.get()));
 
                 a.accept(new ItemStack(SAItems.JINGASA_METAL_HELMET.get()));
+
+                a.accept(new ItemStack(SAItems.SMITHING_HAMMER.get()));
+                a.accept(new ItemStack(SAItems.SMITHING_CHOPSTICKS.get()));
+                a.accept(new ItemStack(SAItems.SMITHING_CLAYTUBE.get()));
+
 
             })
             .build());
