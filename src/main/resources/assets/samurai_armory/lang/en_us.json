@@ -8,6 +8,7 @@
   "item.samurai_armory.naginata":"Naginata",
   "item.samurai_armory.tachi":"Tachi",
   "item.samurai_armory.kama":"Kama",
+  "item.samurai_armory.tetsubo":"Tetsubo",
   "item.samurai_armory.chokuto":"Chokuto",
   "item.samurai_armory.katakama_yari":"Katakama Yari",
   "item.samurai_armory.fukuro_yari":"Fukuro Yari",
@@ -15,6 +16,10 @@
   "item.samurai_armory.konsaibo":"Konsaibo",
   "item.samurai_armory.tate_shield":"Tate Shield",
   "item.samurai_armory.tanto":"Tanto",
+
+  "item.samurai_armory.smithing_chopsticks":"Smithing Chopsticks",
+  "item.samurai_armory.smithing_claytube":"Smithing Clay Tube",
+  "item.samurai_armory.smithing_hammer":"Smithing Hammer",
 
   "item.samurai_armory.ninja_helmet":"Ninja Helmet",
   "item.samurai_armory.ninja_chest":"Ninja Chestplate",
