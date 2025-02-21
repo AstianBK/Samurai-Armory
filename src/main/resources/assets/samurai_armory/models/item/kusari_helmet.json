@@ -1,6 +1,92 @@
 {
-  "parent": "minecraft:item/generated",
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    128,
+    128
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        -7.5,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        -7.5,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0,
+        -9,
+        2.75
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        -9,
+        2.75
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        -15,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        165,
+        0
+      ],
+      "translation": [
+        0,
+        -29,
+        2
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        -29,
+        2
+      ]
+    }
+  },
   "textures": {
-    "layer0": "minecraft:item/iron_helmet"
+    "particle": "item/kusari"
   }
 }
