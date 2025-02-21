@@ -58,20 +58,33 @@ public class SAItems {
 
     public static final RegistryObject<Item> ALTERNATE_KUSARI_HELMET = ITEMS.register("alternate_kusari_helmet",
             ()-> new KusariArmorItem(ArmorItem.Type.HELMET,
-                    props(),ArmorMaterials.CHAIN));
+                    props(), KusariArmorItem.Variant.HELMET));
+
+    public static final RegistryObject<Item> DARK_KUSARI_HELMET = ITEMS.register("dark_kusari_helmet",
+            ()-> new KusariArmorItem(ArmorItem.Type.HELMET,
+                    props(), KusariArmorItem.Variant.BLACK));
+    public static final RegistryObject<Item> DARK_KUSARI_CHEST = ITEMS.register("dark_kusari_chest",
+            ()-> new KusariArmorItem(ArmorItem.Type.CHESTPLATE,
+                    props(),KusariArmorItem.Variant.BLACK));
+    public static final RegistryObject<Item> DARK_KUSARI_LEGGINGS= ITEMS.register("dark_kusari_leggings",
+            ()-> new KusariArmorItem(ArmorItem.Type.LEGGINGS,
+                    props(),KusariArmorItem.Variant.BLACK));
+    public static final RegistryObject<Item> DARK_KUSARI_BOOT = ITEMS.register("dark_kusari_boot",
+            ()-> new KusariArmorItem(ArmorItem.Type.BOOTS,
+                    props(),KusariArmorItem.Variant.BLACK));
 
     public static final RegistryObject<Item> KUSARI_HELMET = ITEMS.register("kusari_helmet",
             ()-> new KusariArmorItem(ArmorItem.Type.HELMET,
-                    props(),ArmorMaterials.IRON));
+                    props(), KusariArmorItem.Variant.GRAY));
     public static final RegistryObject<Item> KUSARI_CHEST = ITEMS.register("kusari_chest",
             ()-> new KusariArmorItem(ArmorItem.Type.CHESTPLATE,
-                    props(),ArmorMaterials.IRON));
+                    props(),KusariArmorItem.Variant.GRAY));
     public static final RegistryObject<Item> KUSARI_LEGGINGS= ITEMS.register("kusari_leggings",
             ()-> new KusariArmorItem(ArmorItem.Type.LEGGINGS,
-                    props(),ArmorMaterials.IRON));
+                    props(),KusariArmorItem.Variant.GRAY));
     public static final RegistryObject<Item> KUSARI_BOOT = ITEMS.register("kusari_boot",
             ()-> new KusariArmorItem(ArmorItem.Type.BOOTS,
-                    props(),ArmorMaterials.IRON));
+                    props(),KusariArmorItem.Variant.GRAY));
 
 
     public static final RegistryObject<Item> GOSUKU_HELMET = ITEMS.register("gosuku_helmet",
