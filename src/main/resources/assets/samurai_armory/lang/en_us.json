@@ -1,4 +1,6 @@
 {
+  "block.samurai_armory.jap_furnace": "Furnace",
+
   "item.samurai_armory.katana":"Katana",
   "item.samurai_armory.black_katana":"Black Katana",
   "item.samurai_armory.gilded_katana":"Gilded Katana",
@@ -19,7 +21,7 @@
 
   "item.samurai_armory.smithing_chopsticks":"Smithing Chopsticks",
   "item.samurai_armory.smithing_claytube":"Smithing Clay Tube",
-  "item.samurai_armory.smithing_hammer":"Smithing Hammer",
+  "item.samurai_armory.japsmithing_hammer":"Smithing Hammer",
 
   "item.samurai_armory.ninja_helmet":"Ninja Helmet",
   "item.samurai_armory.ninja_chest":"Ninja Chestplate",
@@ -31,7 +33,16 @@
   "item.samurai_armory.ashigaru_leggings":"Ashigaru Leggings",
   "item.samurai_armory.ashigaru_boot":"Ashigaru Boots",
 
+  "item.samurai_armory.dark_kusari_helmet":"Dark Kusari Helmet",
+  "item.samurai_armory.dark_kusari_chest":"Dark Kusari Chestplate",
+  "item.samurai_armory.dark_kusari_leggings":"Dark Kusari Leggings",
+  "item.samurai_armory.dark_kusari_boot":"Dark Kusari Boots",
+
+  "item.samurai_armory.jingasa_hay_helmet":"Hay Jingasa Helmet",
+  "item.samurai_armory.jingasa_metal_helmet":"Iron Jingasa Helmet",
+
   "item.samurai_armory.kusari_helmet":"Kusari Helmet",
+  "item.samurai_armory.alternate_kusari_helmet":"Horned Kusari Helmet",
   "item.samurai_armory.kusari_chest":"Kusari Chestplate",
   "item.samurai_armory.kusari_leggings":"Kusari Leggings",
   "item.samurai_armory.kusari_boot":"Kusari Boots",
