@@ -24,8 +24,8 @@ import java.util.function.Consumer;
 public class KusariArmorItem extends ArmorItem implements GeoItem {
     public final AnimatableInstanceCache cache= GeckoLibUtil.createInstanceCache(this);
 
-    public KusariArmorItem(Type p_266831_, Properties p_40388_) {
-        super(ArmorMaterials.IRON, p_266831_, p_40388_);
+    public KusariArmorItem(Type p_266831_, Properties p_40388_,ArmorMaterials materials) {
+        super(materials, p_266831_, p_40388_);
     }
 
     @Override

@@ -56,18 +56,22 @@ public class SAItems {
             ()-> new AshigaruArmorItem(ArmorItem.Type.BOOTS,
                     props()));
 
+    public static final RegistryObject<Item> ALTERNATE_KUSARI_HELMET = ITEMS.register("alternate_kusari_helmet",
+            ()-> new KusariArmorItem(ArmorItem.Type.HELMET,
+                    props(),ArmorMaterials.CHAIN));
+
     public static final RegistryObject<Item> KUSARI_HELMET = ITEMS.register("kusari_helmet",
             ()-> new KusariArmorItem(ArmorItem.Type.HELMET,
-                    props()));
+                    props(),ArmorMaterials.IRON));
     public static final RegistryObject<Item> KUSARI_CHEST = ITEMS.register("kusari_chest",
             ()-> new KusariArmorItem(ArmorItem.Type.CHESTPLATE,
-                    props()));
+                    props(),ArmorMaterials.IRON));
     public static final RegistryObject<Item> KUSARI_LEGGINGS= ITEMS.register("kusari_leggings",
             ()-> new KusariArmorItem(ArmorItem.Type.LEGGINGS,
-                    props()));
+                    props(),ArmorMaterials.IRON));
     public static final RegistryObject<Item> KUSARI_BOOT = ITEMS.register("kusari_boot",
             ()-> new KusariArmorItem(ArmorItem.Type.BOOTS,
-                    props()));
+                    props(),ArmorMaterials.IRON));
 
 
     public static final RegistryObject<Item> GOSUKU_HELMET = ITEMS.register("gosuku_helmet",
