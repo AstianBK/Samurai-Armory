@@ -10,13 +10,13 @@
     "item": "minecraft:gold_ingot"
   },
   "tool1": {
-    "tag": "sa_samurai_armory:blacksmith_hammer"
+    "tag": "samurai_armory:sa_blacksmith_hammer"
   },
   "tool2": {
-    "tag": "sa_samurai_armory:blacksmith_tongs"
+    "tag": "samurai_armory:sa_blacksmith_tongs"
   },
   "tool3": {
-    "tag": "sa_samurai_armory:blacksmith_bellows"
+    "tag": "samurai_armory:sa_blacksmith_bellows"
   },
   "experience": 10,
   "cooking_time":800,
