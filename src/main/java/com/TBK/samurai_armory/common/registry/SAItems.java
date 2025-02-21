@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class SAItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SamuraiArmory.MODID);
 
-    public static final RegistryObject<Item> SMITHING_HAMMER = ITEMS.register("smithing_hammer",()->new HammerItem(new Item.Properties().stacksTo(1).durability(64)));
+    public static final RegistryObject<Item> SMITHING_HAMMER = ITEMS.register("japsmithing_hammer",()->new HammerItem(new Item.Properties().stacksTo(1).durability(64)));
     public static final RegistryObject<Item> SMITHING_CHOPSTICKS = ITEMS.register("smithing_chopsticks",()->new Item(new Item.Properties().stacksTo(1).durability(32)));
     public static final RegistryObject<Item> SMITHING_CLAYTUBE = ITEMS.register("smithing_claytube",()->new Item(new Item.Properties().stacksTo(1).defaultDurability(128)));
 

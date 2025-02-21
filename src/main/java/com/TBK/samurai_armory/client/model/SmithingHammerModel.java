@@ -14,7 +14,7 @@ public class SmithingHammerModel<T extends HammerItem> extends GeoModel<T> {
 
     @Override
     public ResourceLocation getTextureResource(T object) {
-        return new ResourceLocation(SamuraiArmory.MODID,"textures/armor/japsmithinghammer.png");
+        return new ResourceLocation(SamuraiArmory.MODID,"textures/item/japsmithinghammer.png");
     }
 
     @Override

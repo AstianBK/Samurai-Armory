@@ -62,6 +62,8 @@ public class SACreativeTabs {
 
                 a.accept(new ItemStack(SAItems.JINGASA_METAL_HELMET.get()));
 
+                a.accept(new ItemStack(SABlocks.JAP_FURNACE.get()));
+
                 a.accept(new ItemStack(SAItems.SMITHING_HAMMER.get()));
                 a.accept(new ItemStack(SAItems.SMITHING_CHOPSTICKS.get()));
                 a.accept(new ItemStack(SAItems.SMITHING_CLAYTUBE.get()));
