@@ -1,9 +1,6 @@
 package com.TBK.samurai_armory.common.items;
 
-import com.TBK.samurai_armory.client.renderer.AshigaruArmorRenderer;
-import com.TBK.samurai_armory.client.renderer.BlackKatanaRenderer;
 import com.TBK.samurai_armory.client.renderer.KusariArmorRenderer;
-import com.TBK.samurai_armory.client.renderer.KusariItemRenderer;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -33,12 +30,6 @@ public class KusariArmorItem extends ArmorItem implements GeoItem {
         consumer.accept(new IClientItemExtensions() {
             private GeoArmorRenderer<?> renderer;
 
-            private final BlockEntityWithoutLevelRenderer rendererItem = new KusariItemRenderer<>();
-
-            @Override
-            public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-                return rendererItem;
-            }
             @Override
             public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
                 if (this.renderer == null)
