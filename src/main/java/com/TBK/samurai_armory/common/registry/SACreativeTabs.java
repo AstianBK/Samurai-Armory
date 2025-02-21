@@ -44,6 +44,11 @@ public class SACreativeTabs {
 
                 a.accept(new ItemStack(SAItems.ALTERNATE_KUSARI_HELMET.get()));
 
+                a.accept(new ItemStack(SAItems.DARK_KUSARI_HELMET.get()));
+                a.accept(new ItemStack(SAItems.DARK_KUSARI_CHEST.get()));
+                a.accept(new ItemStack(SAItems.DARK_KUSARI_LEGGINGS.get()));
+                a.accept(new ItemStack(SAItems.DARK_KUSARI_BOOT.get()));
+
                 a.accept(new ItemStack(SAItems.KUSARI_HELMET.get()));
                 a.accept(new ItemStack(SAItems.KUSARI_CHEST.get()));
                 a.accept(new ItemStack(SAItems.KUSARI_LEGGINGS.get()));

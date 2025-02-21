@@ -20,9 +20,10 @@ import java.util.function.Consumer;
 
 public class KusariArmorItem extends ArmorItem implements GeoItem {
     public final AnimatableInstanceCache cache= GeckoLibUtil.createInstanceCache(this);
-
-    public KusariArmorItem(Type p_266831_, Properties p_40388_,ArmorMaterials materials) {
-        super(materials, p_266831_, p_40388_);
+    public Variant variant;
+    public KusariArmorItem(Type p_266831_, Properties p_40388_,Variant variant) {
+        super(ArmorMaterials.IRON, p_266831_, p_40388_);
+        this.variant=variant;
     }
 
     @Override
@@ -50,5 +51,10 @@ public class KusariArmorItem extends ArmorItem implements GeoItem {
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;
+    }
+    public enum Variant{
+        BLACK,
+        HELMET,
+        GRAY;
     }
 }
