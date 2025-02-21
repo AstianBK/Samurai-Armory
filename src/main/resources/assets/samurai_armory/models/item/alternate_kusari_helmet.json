@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "samurai_armory:item/kusari_chest"
+    "layer0": "samurai_armory:item/alternate_kusari_helmet"
   }
 }

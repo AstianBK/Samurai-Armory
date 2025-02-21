@@ -14,4 +14,5 @@ public class KusariArmorRenderer<T extends KusariArmorItem> extends GeoArmorRend
         super(new KusariArmorModel<>());
     }
 
+
 }
