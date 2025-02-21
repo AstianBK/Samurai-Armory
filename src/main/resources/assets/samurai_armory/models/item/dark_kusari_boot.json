@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "samurai_armory:item/dark_kusari_chest"
+    "layer0": "samurai_armory:item/dark_kusari_boot"
   }
 }
