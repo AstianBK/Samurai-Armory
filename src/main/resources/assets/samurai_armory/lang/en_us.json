@@ -1,4 +1,6 @@
 {
+  "itemGroup.samurai_armory": "Samurai Armory",
+
   "block.samurai_armory.jap_furnace": "Furnace",
 
   "item.samurai_armory.katana":"Katana",
@@ -22,6 +24,16 @@
   "item.samurai_armory.smithing_chopsticks":"Smithing Chopsticks",
   "item.samurai_armory.smithing_claytube":"Smithing Clay Tube",
   "item.samurai_armory.japsmithing_hammer":"Smithing Hammer",
+
+  "item.samurai_armory.toranaga_helmet":"Toranaga Helmet",
+  "item.samurai_armory.toranaga_chest":"Toranaga Chestplate",
+  "item.samurai_armory.toranaga_leggings":"Toranaga Leggings",
+  "item.samurai_armory.toranaga_boot":"Toranaga Boots",
+
+  "item.samurai_armory.sendai_helmet":"Sendai Helmet",
+  "item.samurai_armory.sendai_chest":"Sendai Chestplate",
+  "item.samurai_armory.sendai_leggings":"Sendai Leggings",
+  "item.samurai_armory.sendai_boot":"Sendai Boots",
 
   "item.samurai_armory.ninja_helmet":"Ninja Helmet",
   "item.samurai_armory.ninja_chest":"Ninja Chestplate",
